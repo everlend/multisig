@@ -313,7 +313,7 @@ fn assert_unique_owners(owners: &[Pubkey]) -> Result<()> {
     Ok(())
 }
 
-#[error]
+#[error_code]
 pub enum ErrorCode {
     #[msg("The given owner is not part of this multisig.")]
     InvalidOwner,
