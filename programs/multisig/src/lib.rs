@@ -23,7 +23,7 @@ use anchor_lang::solana_program::instruction::Instruction;
 use std::convert::Into;
 use std::ops::Deref;
 
-declare_id!("6tbPiQLgTU4ySYWyZGXbnVSAEzLc1uF8t5kJPXXgBmRP");
+declare_id!("3ktyhEXgbiUyDG7RXCzzXWzjXJpThpqqePhJb85eVqFa");
 
 #[program]
 pub mod serum_multisig {
@@ -236,6 +236,7 @@ pub struct ExecuteTransaction<'info> {
         seeds = [multisig.key().as_ref()],
         bump = multisig.nonce,
     )]
+    /// CHECK:
     multisig_signer: UncheckedAccount<'info>,
     #[account(mut, has_one = multisig)]
     transaction: Box<Account<'info, Transaction>>,

@@ -1,17 +1,17 @@
-anchor_version = "0.19.0"
+anchor_version = "0.24.2"
 
 [provider]
 cluster = "localnet"
 wallet = "~/.config/solana/id.json"
 
 [programs.mainnet]
-serum_multisig = "6tbPiQLgTU4ySYWyZGXbnVSAEzLc1uF8t5kJPXXgBmRP"
+serum_multisig = "3ktyhEXgbiUyDG7RXCzzXWzjXJpThpqqePhJb85eVqFa"
 
 [programs.devnet]
-serum_multisig = "F3Uf5F61dmht1xuNNNkk3jnzj82TY56vVjVEhZALRkN"
+serum_multisig = "3ktyhEXgbiUyDG7RXCzzXWzjXJpThpqqePhJb85eVqFa"
 
 [programs.localnet]
-serum_multisig = "6tbPiQLgTU4ySYWyZGXbnVSAEzLc1uF8t5kJPXXgBmRP"
+serum_multisig = "3ktyhEXgbiUyDG7RXCzzXWzjXJpThpqqePhJb85eVqFa"
 
 [scripts]
-test = "npx mocha -t 1000000 tests/"
+test = "yarn test:program"
